@@ -33,6 +33,17 @@ body {
 
 }
 
+#moreInfo {
+
+	padding: 30px 15%;
+	font-family: Montserrat;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5em;
+	display:none;
+
+}
+
 #clickToStart {
 
 	color: #fff;

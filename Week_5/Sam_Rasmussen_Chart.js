@@ -5,9 +5,12 @@ $('#clickToStart').on('click', function() {
 	var males = 75;
 	var females = 25;
 
+	$('#moreInfo').fadeIn(500, function () {})
+
 	$(function animateStart () {
 
-		$('#clickToStart').text('Click the bar to fight status quo');
+		$('#chartTitle').text('Ratio of Male/Female Protagnists in Video Games')
+		$('#clickToStart').text('Click the bar to boost female representation in games');
 
 	});
 
