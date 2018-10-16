@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,900');
+
+body {
+
+	margin: 0;
+	width: 100%;
+	background: #7C7C7C;
+
+}
+
+#chartBase {
+	
+	width: 80%;
+	z-index: -1000;
+	display:flex;
+	height: 10vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 9vh;
+	margin-bottom: 20vh;
+    box-shadow: 0 0 18px 6px #0c0c0c40;
+
+}
+
+#chartTitle {
+
+	text-align: center;
+	padding: 8vh 8vh 8vh 8vh;
+	color: #fff;
+	font-family: Montserrat;
+	font-weight: 900;
+	margin: 0;
+
+}
+
+#clickToStart {
+
+	color: #fff;
+	font-family: Montserrat;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px;
+	background: #2B303A;
+	border: #2B303A solid 5px;
+	width: 200px !important;
+
+}
+
+#clickToStart:hover {
+
+	color: #2B303A;
+	font-family: Montserrat;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px;
+	background: #fff;
+	border: #2B303A solid 5px;
+	width: 200px !important;
+
+}
+
+.chartItem {
+
+	display: table;	
+	margin:0;
+	padding:0;
+	color: white;
+	font-size: 1.25vw;
+	height: 100%;
+	text-align: center;
+	font-family: Montserrat;
+
+}
+
+.chartItem > p {
+
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+#males {
+
+	width: 75%; /*Males default to 24% of the main chart, combined with males, makes up 32%*/
+	background: #D64933;
+
+
+}
+
+#females {
+
+	width: 25%; /*Females default to 8% of the main chart, combined with females, makes up 32%*/
+	background: #92DCE5;
+
+}
+
+.counterStyle {
+
+	color: #fff;
+	font-family: Montserrat;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 24px;
+	padding: 0 25px;
+
+}
+
+#counterContainer {
+
+	display: table;
+	margin: 0 auto;
+
+}
+
+/*#na {
+
+	width: 26%;
+	background: #FFD275;
+
+}
+
+#ambig {
+
+	width: 10%;
+	background: #E8AE68;	
+
+}*/
