@@ -8,6 +8,12 @@ body{
 
 }
 
+.lbTextDB {
+
+	display:none;
+
+}
+
 #lightBox {
 
 	background:#ffffffe0;

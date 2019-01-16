@@ -13,13 +13,22 @@ for (i=0; i<imgCount; ++i) {
 
 }
 
-//When image is clicked, open in lightbox
+//When image is clicked, open in lightbox and pull information from bottom of HTML doc
 
 $(".gI").click(function() {
 
 	clickedImage = $(this).attr('src');
+	imgNum = imgArray[$(this).attr("id")]
+	imgID = ("group"+imgNum)
+	
+	newTitle = $("#boxTitle"+imgNum).text()
+	newYear = $("#boxYear"+imgNum).text()
+	newText = $("#boxDesc"+imgNum).text()
 
 	$("#lbImage").attr('src', clickedImage);
+	$("#lbTitle").text(newTitle);
+	$("#lbYear").text(newYear);
+	$("#lbText").text(newText);
 	$("#lightBox").fadeIn(500)
 
 })
