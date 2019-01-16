@@ -4,64 +4,97 @@
   <title>The Fish-Tank</title>
   <link rel="stylesheet" href="portStyle.css">
 
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 
 <body>
+
+	<div id=lightBox>
+
+		<div id=lightboxContent>
+
+			<img src="Images/0.jpg" id="lbImage">
+
+			<div id="lbDescCont">
+				<h1 id="lbTitle">Image Title</h1>
+				<h3 id="lbYear">Image Year</h3>
+				<p id="lbText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales mauris in dictum convallis. Maecenas sem nibh, auctor ac elementum at, ornare ultricies leo. Quisque sodales quam in maximus malesuada. Fusce sit amet malesuada risus. Proin ac pharetra felis. Maecenas molestie tempus diam, in gravida mi condimentum nec. Nunc in lectus massa. Vivamus tempus magna vitae sem ultricies, non pharetra neque pretium. Curabitur ac purus mi. Pellentesque porta facilisis dui vel malesuada.
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="topBar">
+		<h2 id="myNameTop">Sam Rasmussen</h2>
+		<i class="fas fa-bars" id="dropDown"></i>
+	</div>
+
+	<div id=miniNav>
+		<ul id="sidebarListTop">
+			<li id="showAllMini" class="filters">Show All</li>
+			<li id="vectorFilter" class="filters">Vector Graphics</li>
+			<li id="uxFilter" class="filters">UI/UX</li>
+			<li id="brandFilter" class="filters">Branding</li>
+			<li id="videoFilter" class="filters">Video</li>
+			<li id="otherFilter" class="filters">Other</li>
+			<li id="about" class="filters">About</li>
+		</ul>
+	</div>		
+
 	<div id=flexContainer>
+
 		<div id="sidebar">
 			<h2 id="myName">Sam Rasmussen</h2>
 			<ul id="sidebarList">
-				<li>Vector Graphics</li>
-				<li>UI/UX</li>
-				<li>Branding</li>
-				<li>Video</li>
-				<li>Other</li>
+				<li id="showAll" class="filters">Show All</li>
+				<li id="vectorFilter" class="filters">Vector Graphics</li>
+				<li id="uxFilter" class="filters">UI/UX</li>
+				<li id="brandFilter" class="filters">Branding</li>
+				<li id="videoFilter" class="filters">Video</li>
+				<li id="otherFilter" class="filters">Other</li>
+				<li id="about" class="filters">About</li>
 			</ul>
 		</div>
 
 		<div id="content">
-
-			<img src="Images/Blue-Websize.jpg" class="gI" class="3d">
-			<img src="Images/Chevron_Greytone.png" class="gI" class="vector">
-			<img src="Images/Core-01.png" class="gI" class="vector">
-			<img src="Images/Core-02.png" class="gI" class="vector">
-			<img src="Images/GlassMesa_Header-65.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_1 - Isolation.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_2 - Logic.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_3 - Unity.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_4 - Anarchy.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_5 - Escape.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_6 - Celebration.png" class="gI" class="vector">
-			<img src="Images/In-Class 2_7 - Indimidation.png" class="gI" class="vector">
-			<img src="Images/Layout Screenshot.png" class="gI" class="layout">
-			<img src="Images/Leaping_Off_Post_Card-FRONT.png" class="gI" class="branding">
-			<img src="Images/New_Tec_Working_Dogs_Logo_Finals.png" class="gI" class="branding">			
-			<img src="Images/Pilo_V6_Vector_axo.jpg" class="gI" class="vector">
-			<img src="Images/Props_Company.jpg" class="gI" class="vector">
-			<img src="Images/PTH_Facebook_V2.jpg" class="gI" class="branding">
-			<img src="Images/PTH_Logo_Large_v2.png" class="gI" class="branding">
-			<img src="Images/PTH_Profile_V2.jpg" class="gI" class="branding">
-			<img src="Images/PTH_Twitter_V2.jpg" class="gI" class="branding">
-			<img src="Images/PTH_V5-10.png" class="gI" class="branding">
-			<img src="Images/PTH_V5-11.png" class="gI" class="branding">
-			<img src="Images/RBG_April_2015---5.jpg" class="gI" class="photo">
-			<img src="Images/Spider.jpg" class="gI" class="photo">
-			<img src="Images/Tech_Under_20_Media_Updated-01.jpg" class="gI" class="branding">
-			<img src="Images/Tech_Under_20_Media_Updated-02.jpg" class="gI" class="branding">
-			<img src="Images/Tech_Under_20_Media_Updated-03.jpg" class="gI" class="branding">
-			<img src="Images/Tech_Under_20_Media_Updated-07.jpg" class="gI" class="branding">
-			<img src="Images/The-InkJet-Collection---1.jpg" class="gI" class="photo">
-			<img src="Images/The-InkJet-Collection---14.jpg" class="gI" class="photo">
-			<img src="Images/The-InkJet-Collection---22.jpg" class="gI" class="photo">
-			<img src="Images/The-InkJet-Collection---23.jpg" class="gI" class="photo">
-			<img src="Images/The-InkJet-Collection---30.jpg" class="gI" class="photo">
-			<img src="Images/Tokyo Slam Screengrab.jpg" class="gI" class="game">
-
-			<img src="Images/Unique_Geek_BC_w_Bleed_Back.jpg" class="gI" class="branding">
-			<img src="Images/Unique_Geek_BC_w_Bleed_Front.jpg" class="gI" class="branding">
-			<img src="Images/v5---Website-Mockup---Homepage.jpg" class="gI" class="web">
-			<img src="Images/Websize-Contact-Eye.jpg" class="gI" class="photo">
-			<img src="Images/Xarv-06.png" class="gI" class="branding">
+			
+			<img src="Images/33.png" class="gI layout" 		id="33">
+			<img src="Images/32.jpg" class="gI game" 		id="32">
+			<img src="Images/31.jpg" class="gI web" 		id="31">
+			<img src="Images/30.jpg" class="gI web" 		id="30">
+			<img src="Images/29.jpg" class="gI vector" 		id="29">
+			<img src="Images/28.png" class="gI branding" 	id="28">
+			<img src="Images/27.jpg" class="gI branding" 	id="27">
+			<img src="Images/26.png" class="gI branding" 	id="26">
+			<img src="Images/25.jpg" class="gI branding" 	id="25">
+			<img src="Images/24.jpg" class="gI branding" 	id="24">
+			<img src="Images/23.png" class="gI branding" 	id="23">
+			<img src="Images/22.jpg" class="gI photo" 		id="22">
+			<img src="Images/21.png" class="gI branding" 	id="21">
+			<img src="Images/20.jpg" class="gI photo" 		id="20">
+			<img src="Images/19.jpg" class="gI photo" 		id="19">
+			<img src="Images/18.jpg" class="gI photo" 		id="18">
+			<img src="Images/17.jpg" class="gI photo" 		id="17">
+			<img src="Images/16.jpg" class="gI branding" 	id="16">
+			<img src="Images/15.jpg" class="gI branding" 	id="15">
+			<img src="Images/14.jpg" class="gI branding" 	id="14">
+			<img src="Images/13.jpg" class="gI photo" 		id="13">
+			<img src="Images/12.jpg" class="gI photo" 		id="12">
+			<img src="Images/11.png" class="gI branding" 	id="11">
+			<img src="Images/10.png" class="gI branding" 	id="10">
+			<img src="Images/9.png" class="gI vector" 		id="9">
+			<img src="Images/8.png" class="gI vector" 		id="8">
+			<img src="Images/7.png" class="gI vector" 		id="7">
+			<img src="Images/6.png" class="gI vector" 		id="6">
+			<img src="Images/5.png" class="gI vector" 		id="5">
+			<img src="Images/4.png" class="gI vector" 		id="4">
+			<img src="Images/3.png" class="gI vector" 		id="3">
+			<img src="Images/2.jpg" class="gI branding" 	id="2">
+			<img src="Images/1.jpg" class="gI threeD" 		id="1">
+			<img src="Images/0.jpg" class="gI threeD"		id="0">
 
 		</div>
 	</div>
