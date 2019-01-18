@@ -28,14 +28,14 @@ $(".gI").click(function() {
 	$("#lbImage").attr('src', clickedImage);
 	$("#lbTitle").text(newTitle);
 	$("#lbYear").text(newYear);
-	$("#lbText").text(newText);
+	$("#lbText").html(newText);
 	$("#lightBox").fadeIn(500)
 
 })
 
-//Close lightbox when any part of the page is clicked
+//Close lightbox when any part of the image is clicked
 
-$("#lightBox").click(function(){
+$("#lbImage").click(function(){
 
 	$("#lightBox").fadeOut(500)
 
@@ -66,14 +66,13 @@ $(".filters").click(function(){
 			$(".branding").fadeIn(500)
 			$(".photo").fadeIn(500)
 			$(".web").fadeIn(500)
-			$(".threeD").fadeIn(500)
-			$(".game").fadeIn(500)
-			$(".layout").fadeIn(500)
+			$(".design").fadeIn(500)
 			$(".video").fadeIn(500)
 			$("#showAll").fadeOut(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)			
 			break;
 
 		case "showAllMini":
@@ -82,15 +81,14 @@ $(".filters").click(function(){
 			$(".branding").fadeIn(500)
 			$(".photo").fadeIn(500)
 			$(".web").fadeIn(500)
-			$(".threeD").fadeIn(500)
-			$(".game").fadeIn(500)
-			$(".layout").fadeIn(500)
+			$(".design").fadeIn(500)
 			$(".video").fadeIn(500)
 			$("#showAllMini").fadeOut(500)
 			$("#showAll").fadeOut(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
 			break;
 
 		case "vectorFilter":
@@ -99,32 +97,30 @@ $(".filters").click(function(){
 			$(".branding").fadeOut(500)
 			$(".photo").fadeOut(500)
 			$(".web").fadeOut(500)
-			$(".threeD").fadeOut(500)
-			$(".game").fadeOut(500)
-			$(".layout").fadeOut(500)
+			$(".design").fadeOut(500)
 			$(".video").fadeOut(500)
 			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
 			break;
 
-		case "uxFilter":
-			console.log("UX");
+		case "webFilter":
+			console.log("Web");
 			$(".vector").fadeOut(500)
 			$(".branding").fadeOut(500)
 			$(".photo").fadeOut(500)
 			$(".web").fadeIn(500)
-			$(".threeD").fadeOut(500)
-			$(".game").fadeOut(500)
-			$(".layout").fadeOut(500)
+			$(".design").fadeOut(500)
 			$(".video").fadeOut(500)
 			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
 			break;
 
 		case "brandFilter":
@@ -133,15 +129,14 @@ $(".filters").click(function(){
 			$(".branding").fadeIn(500)
 			$(".photo").fadeOut(500)
 			$(".web").fadeOut(500)
-			$(".threeD").fadeOut(500)
-			$(".game").fadeOut(500)
-			$(".layout").fadeOut(500)
+			$(".design").fadeOut(500)
 			$(".video").fadeOut(500)
 			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
 			break;
 
 		case "videoFilter":
@@ -150,32 +145,62 @@ $(".filters").click(function(){
 			$(".branding").fadeOut(500)
 			$(".photo").fadeOut(500)
 			$(".web").fadeOut(500)
-			$(".threeD").fadeOut(500)
-			$(".game").fadeOut(500)
-			$(".layout").fadeOut(500)
+			$(".design").fadeOut(500)
 			$(".video").fadeIn(500)
 			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
 			break;	
 
-		case "otherFilter":
-			console.log("Other");
+		case "genFilter":
+			console.log("General Design");
 			$(".vector").fadeOut(500)
 			$(".branding").fadeOut(500)
-			$(".photo").fadeIn(500)
+			$(".photo").fadeOut(500)
 			$(".web").fadeOut(500)
-			$(".threeD").fadeIn(500)
-			$(".game").fadeIn(500)
-			$(".layout").fadeIn(500)
+			$(".design").fadeIn(500)
 			$(".video").fadeOut(500)
 			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
+			$("#aboutCont").fadeOut(500)
+			break;
+
+		case "photoFilter":
+			console.log("Photo");
+			$(".vector").fadeOut(500)
+			$(".branding").fadeOut(500)
+			$(".photo").fadeIn(500)
+			$(".web").fadeOut(500)
+			$(".design").fadeOut(500)
+			$(".video").fadeOut(500)
+			$("#showAll").fadeIn(500)
+			$("#showAllMini").fadeIn(500)
+			if (topBarOpen == "flex") {
+				$("#miniNav").slideToggle(500)
+			}
+			$("#aboutCont").fadeOut(500)
+			break;
+
+		case "aboutFilter":
+			console.log("About Page");
+			$(".vector").fadeOut(500)
+			$(".branding").fadeOut(500)
+			$(".photo").fadeOut(500)
+			$(".web").fadeOut(500)
+			$(".design").fadeOut(500)
+			$(".video").fadeOut(500)
+			$("#showAll").fadeOut(500)
+			$("#showAllMini").fadeIn(500)
+			if (topBarOpen == "flex") {
+				$("#miniNav").slideToggle(500)
+			}
+			$("#about").fadeIn(500)
 			break;
 	}
 
