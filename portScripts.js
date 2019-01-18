@@ -22,12 +22,12 @@ $(".gI").click(function() {
 	imgID = ("group"+imgNum)
 	
 	newTitle = $("#boxTitle"+imgNum).text()
-	newYear = $("#boxYear"+imgNum).text()
+	// newYear = $("#boxYear"+imgNum).text()
 	newText = $("#boxDesc"+imgNum).text()
 
 	$("#lbImage").attr('src', clickedImage);
 	$("#lbTitle").text(newTitle);
-	$("#lbYear").text(newYear);
+	// $("#lbYear").text(newYear);
 	$("#lbText").html(newText);
 	$("#lightBox").fadeIn(500)
 
