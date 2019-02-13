@@ -72,7 +72,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)			
+			$("#about").fadeOut(500)			
 			break;
 
 		case "showAllMini":
@@ -88,7 +88,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "vectorFilter":
@@ -104,7 +104,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "webFilter":
@@ -120,7 +120,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "brandFilter":
@@ -136,7 +136,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "videoFilter":
@@ -152,7 +152,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;	
 
 		case "genFilter":
@@ -168,7 +168,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "photoFilter":
@@ -184,7 +184,7 @@ $(".filters").click(function(){
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#aboutCont").fadeOut(500)
+			$("#about").fadeOut(500)
 			break;
 
 		case "aboutFilter":
@@ -197,10 +197,11 @@ $(".filters").click(function(){
 			$(".video").fadeOut(500)
 			$("#showAll").fadeOut(500)
 			$("#showAllMini").fadeIn(500)
+			$("#about").fadeIn(500)
 			if (topBarOpen == "flex") {
 				$("#miniNav").slideToggle(500)
 			}
-			$("#about").fadeIn(500)
+
 			break;
 	}
 
