@@ -17,15 +17,30 @@ for (i=0; i<imgCount; ++i) {
 
 $(".gI").click(function() {
 
-	clickedImage = $(this).attr('src');
-	imgNum = imgArray[$(this).attr("id")]
-	imgID = ("group"+imgNum)
+	//First we get the ID of the image, and the file extention it uses
+	clickedImage = $(this).attr('id');
+	console.log("clickedImage is " + clickedImage)
 	
-	newTitle = $("#boxTitle"+imgNum).text()
-	// newYear = $("#boxYear"+imgNum).text()
-	newText = $("#boxDesc"+imgNum).text()
+	classGrab = $(this).attr('class');
+	console.log("classGrab is " + classGrab)
+	
+	//Next we determine which extention to insert into our new image string
+	if ($(this).hasClass('GIF')) {
+		console.log("Image is a GIF")
+		$("#lbImage").attr('src', 'Images/' + clickedImage + '.gif');
+	} else if ($(this).hasClass('JPG')){
+		console.log("Image is a JPG")
+		$("#lbImage").attr('src', 'Images/' + clickedImage + '.jpg');
+	} else if ($(this).hasClass('PNG')){
+		console.log("Image is a PNG")
+		$("#lbImage").attr('src', 'Images/' + clickedImage + '.png');
+	}
+	
+	//With the image number identified, we then grab the text under the specified class, using the ID we grabbed earlier
+	newTitle = $("#boxTitle" + clickedImage).text()
+	newText = $("#boxDesc" + clickedImage).text()
 
-	$("#lbImage").attr('src', clickedImage);
+	//Then all that's left after obtaining the text from the defined newTitle and newText buckets is dumping it into the appropriate containers.
 	$("#lbTitle").text(newTitle);
 	// $("#lbYear").text(newYear);
 	$("#lbText").html(newText);
