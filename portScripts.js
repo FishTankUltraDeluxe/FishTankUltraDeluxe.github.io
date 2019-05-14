@@ -50,7 +50,7 @@ $(".gI").click(function() {
 
 //Close lightbox when any part of the image is clicked
 
-$("#lbImage").click(function(){
+$("#lightBox").click(function(){
 
 	$("#lightBox").fadeOut(500)
 

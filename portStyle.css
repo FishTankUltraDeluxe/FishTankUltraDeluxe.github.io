@@ -1,64 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
 
 body{
-
 	margin:0;
 	font-family:'Poppins';
 	color:#212121;
-
 }
 
 #about{
-
 	display:none;
-
 }
 
 #aboutCont {
-
 	display:flex;
 	justify-content:flex-start;
 	align-items: flex-start;
-
 }
 
 #aboutPhoto {
-
 	max-width: 20%;
 	padding:30px;
-
 }
 
 #aboutText {
-
 	width:80%;
 	padding:30px;
-
 }
 
 #aboutHeader{
-
 	margin:0;
-
 }
 
 .lbTextDB {
-
 	display:none;
-
 }
 
 #lightBox {
-
-	background:#ffffffe0;
+	background:#ffffffed;
 	display:none;
 	position:fixed;
 	height: 100vh;
-
+	cursor: pointer;
 }
 
 #lightboxContent{
-
 	display:flex;
 	flex-wrap: wrap;
 	align-items:center;
@@ -66,70 +50,49 @@ body{
 	padding-left:80px;
 	padding-right: 80px;
 	height:100%;
-
-
 }
 
 @media only screen and (min-width: 1600px) {
-
 	#lightboxContent {
-
 		height:80%;
-
 	}
-
 }
-
 
 li {
-
 	cursor: pointer;
-
 }
 
-
-
 #lbImage {
-
 	max-width: 60%;
 	max-height: 60%;
 	margin-right: 50px;
-    border: 1px solid #ccc;
-    cursor:zoom-out;
-
 }
 
 #lbDescCont {
-
 	max-width:30%;
-
 }
 
+#closeImagePrompt {
+	font-size:80%;
+	font-weight:700;
+}
 
 #lbTitle, #lbYear, #lbText {
-
 	color: #000;
-
 }
 
 @media only screen and (max-width: 1000px) {
-
 	#lbImage {
-
 		max-width:100%;
 		max-height:80vh;
-		padding:0;
-			
+		padding:0;		
 	}
 
 	#lbDescCont {
-
 		max-width:100%;
-
 	}
 
 	#lightBox {
-
 		padding:20px;
 		flex-wrap:wrap;
 		overflow:auto;
@@ -138,38 +101,27 @@ li {
 	}
 
 	#lightBox:after{
-
 		content: "";
 		display:block;
 		height:20px;
 		width:100%;
-
 	}
-
 }
 
 @media only screen and (min-width: 1600px) {
-
-
 	#lightBox {
-
 		padding:80px;
-
 	}
-
 }
 
 #myName {
-
 	font-weight:700;
 	border-bottom:1px solid #ccc;
 	padding-bottom:15px;
 	margin-top:0;
-
 }
 
 #sidebarList {
-
 	list-style-type: none;
 	font-weight:300;
 	padding:0;
@@ -178,100 +130,66 @@ li {
 	color:#777;
 	text-align: right;
 	font-size: 15px;
-
 }
 
 @media screen and (max-device-width: 700px) {
-
 	#sidebar {
-
-		display:none;
-			
+		display:none;		
 	}
-
 }
 
 @media only screen and (max-width: 650px) {
-
 	#sidebar {
-
-		display:none;
-			
+		display:none;		
 	}
-
 }
 
 
 #sidebarList>li:hover {
-
 	font-weight:700;
 	color:#000;
-
 }
 
 #flexContainer {
-
 	display:flex;
-
 }
 
 #topBar {
-
 	width:100%;
 	height:75px;
 	display: none;
 	align-items: baseline;
 	background:#f3f3f3;
 	border-bottom:1px solid #ccc;
-/*	padding-left: 50px;
-	padding-right: 50px;*/
 	justify-content: space-between;
-/*	position:fixed;
-	top:0;*/
-
 }
 
 @media only screen and (max-width: 650px) {
-
 	#topBar {
-
 		display: flex;
-
 	}
-
 }
 
 @media screen and (max-device-width: 700px) {
-
 	#topBar {
-
 		display: flex;
-
 	}
-
 }
 
 #myNameTop {
-
 	padding-left: 50px;
-
 }
 
 #topBar > i {
-
 	padding-right: 50px;
 	font-size: 30px;
-
 }
 
 #miniNav{
-
 	display:none;
-
 }
 
 #sidebarListTop {
-
 	list-style-type: none;
 	font-weight:300;
 	padding:20px 50px;
@@ -281,28 +199,22 @@ li {
 	text-align: right;
 	background:#f3f3f3;
 	border-bottom:1px solid #ccc;
-
 }
 
 #sidebarListTop>li:hover {
-
 	font-weight:700;
 	color:#000;
-
 }
 
 #sidebar {
-
 	max-width:144px;
 	flex-grow:1;	
 	padding:30px;
 	border-right: 1px solid #ccc;
 	background:#f3f3f3;
-
 }
 
 #content {
-
 	display:flex;
 	flex-wrap:wrap;
 	justify-content: space-evenly;
@@ -310,17 +222,13 @@ li {
 	align-content:flex-start;
 	margin: 0 15px 15px 0;
 	min-height: 98.4vh;
-
 }
 
 #showAll, #showAllMini {
-
 	display:none;
-
 }
 
 .gI {
-
 	max-width:400px;
 	max-height: 225px;
 	/*align-self: flex-start;*/
@@ -329,14 +237,10 @@ li {
 }
 
 .gI:hover {
-
 	cursor:zoom-in;
-
 }
 
 #funFact {
-
 	font-size: 12px;
 	text-decoration:none;
-
 }
