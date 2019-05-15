@@ -210,7 +210,7 @@ $(".filters").click(function(){
 			$(".web").fadeOut(500)
 			$(".design").fadeOut(500)
 			$(".video").fadeOut(500)
-			$("#showAll").fadeOut(500)
+			$("#showAll").fadeIn(500)
 			$("#showAllMini").fadeIn(500)
 			$("#about").fadeIn(500)
 			if (topBarOpen == "flex") {
